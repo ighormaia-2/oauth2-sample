@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: Oauth2
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/oauth2
+    username: postgres
+    password: docker
+
+  jpa:
+    show_sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+server:
+  port: 8080
+
+security:
+  oauth2:
+    client:
+      scope: password
+      client-id: oauth2
+      client-secret: 123
