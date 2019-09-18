@@ -6,7 +6,7 @@ spring:
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/oauth2
     username: postgres
-    password: docker
+    password: Postgres
 
   jpa:
     show_sql: true
