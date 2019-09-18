@@ -11,5 +11,4 @@ public class ResourceNotFoundException extends PersistenceException {
     public ResourceNotFoundException(String message) {
         super(message);
     }
-
 }
